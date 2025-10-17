@@ -12,6 +12,20 @@ class MyWidget extends StatefulWidget {
   State<MyWidget> createState() => _MyWidgetState();
 }
 
+class Points {
+  final String title;
+  final String description;
+  final List<String> technologies;
+  final String? imageUrl; // opcional
+
+  Points({
+    required this.title,
+    required this.description,
+    required this.technologies,
+    this.imageUrl,
+  });
+}
+
 class _MyWidgetState extends State<MyWidget> {
   @override
   Widget build(BuildContext context) {
